@@ -1,0 +1,50 @@
+{
+  "library": {
+    "name": "SmartLib",
+    "sections": [
+      {
+        "name": "Computer Science",
+        "racks": [
+          {
+            "rack_id": "C-01",
+            "shelves": 4
+          },
+          {
+            "rack_id": "C-02",
+            "shelves": 4
+          },
+          {
+            "rack_id": "C-03",
+            "shelves": 4
+          }
+        ]
+      },
+      {
+        "name": "Programming",
+        "racks": [
+          {
+            "rack_id": "P-01",
+            "shelves": 4
+          },
+          {
+            "rack_id": "P-02",
+            "shelves": 4
+          }
+        ]
+      },
+      {
+        "name": "Database",
+        "racks": [
+          {
+            "rack_id": "D-01",
+            "shelves": 4
+          },
+          {
+            "rack_id": "D-02",
+            "shelves": 4
+          }
+        ]
+      }
+    ]
+  }
+}
