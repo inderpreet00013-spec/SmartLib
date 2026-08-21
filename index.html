@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SmartLib - Book Finder</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>📚 SmartLib</h1>
+        <p>AI-Powered Book Finder & Shelf Navigator</p>
+    </header>
+
+    <main>
+
+        <section class="search-box">
+            <h2>Find Your Book</h2>
+
+            <div class="search-container">
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search by book title, author or category..."
+    >
+
+    <select id="categoryFilter">
+        <option value="">All Categories</option>
+        <option value="Programming">💻 Programming</option>
+        <option value="Networking">🌐 Networking</option>
+        <option value="Database">🗄️ Database</option>
+        <option value="Electronics">⚡ Electronics</option>
+        <option value="Cyber Security">🔐 Cyber Security</option>
+    </select>
+
+    <button onclick="searchBooks()">
+        🔍 Search
+    </button>
+    <button onclick="resetSearch()" class="reset-btn">
+    🔄 Reset
+</button>
+
+</div>
+        </section>
+
+        <section id="results">
+
+            <div class="welcome">
+                <h2>Welcome to SmartLib 👋</h2>
+                <p>
+                    Search for a book to find its exact shelf location.
+                </p>
+            </div>
+
+        </section>
+        <section class="map-section">
+    <h2>🗺️ Library Shelf Navigator</h2>
+
+    <div id="libraryMap" class="library-map">
+        <p>Select a book to see its shelf location.</p>
+    </div>
+</section>
+
+    </main>
+
+    <footer>
+        <p>SmartLib © 2026 | Library Book Finder & Shelf Navigator</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
