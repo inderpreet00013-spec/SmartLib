@@ -25,9 +25,10 @@ async function searchBooks() {
 
     try {
 
-        const response = await fetch(
-            fetch(`https://smartlib-backend-7a7f.onrender.com/search?q=${encodeURIComponent(query)}`)
-        );
+            const response = await fetch(
+    `https://smartlib-backend-7a7f.onrender.com/search?q=${encodeURIComponent(query)}`
+);
+        
 
         const books = await response.json();
         const filteredBooks = category
