@@ -4,6 +4,15 @@ from database import get_connection, create_tables
 from models import Book
 
 app = FastAPI(title="SmartLib API")
+from fastapi.middleware.cors import CORSMiddleware
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=False,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 app.add_middleware(
     CORSMiddleware,
