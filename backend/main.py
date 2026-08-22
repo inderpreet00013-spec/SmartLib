@@ -11,7 +11,7 @@ app.add_middleware(
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
-)
+        )
 
 
 # Create database table when server starts
@@ -39,8 +39,8 @@ def get_books():
     return [dict(book) for book in books]
 
 
-@app.post("/books")
-@app.get("/search")
+@app.get("/search") 
+    
 def search_books(q: str):
     connection = get_connection()
 
@@ -58,6 +58,9 @@ def search_books(q: str):
     connection.close()
 
     return [dict(book) for book in books]
+
+
+@app.post("/books")
 def add_book(book: Book):
     connection = get_connection()
 
