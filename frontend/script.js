@@ -26,7 +26,7 @@ async function searchBooks() {
     try {
 
         const response = await fetch(
-            `http://127.0.0.1:8000/search?q=${encodeURIComponent(query)}`
+            `https://smartlib-backend-7a7f.onrender.com/search?q=${encodeURIComponent(query)}`
         );
 
         const books = await response.json();
